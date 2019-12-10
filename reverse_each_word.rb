@@ -6,6 +6,6 @@ def reverse_each_word(string_sent)
   word_array = string_sent.split(' ')
   # word_array.reverse => ["you?", "are", "how", "and", "there,", "Hello"]
 
-  result = word_array.map {|word| word.reverse}
+  result = word_array.collect {|word| word.reverse}
   result.join(" ")
-end 
+end
